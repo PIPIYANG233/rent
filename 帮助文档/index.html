@@ -1,0 +1,523 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>ETRO STORE HTML Template Documentation</title>
+		<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+
+		<!-- Bootstrap core CSS -->
+		<link href="assets/css/bootstrap.css" rel="stylesheet">
+
+		<!-- Documentation extras -->
+		<link href="assets/css/docs.css" rel="stylesheet">
+		<link href="assets/css/prettify.css" rel="stylesheet">
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+
+  </head>
+  
+  <body>
+    <a class="sr-only" href="#content">Skip to main content</a>
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">ETRO STORE</a>
+			</div>
+			
+			<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Documentation</a></li>
+					<li><a  href="http://www.bootstrapmb.com/item/145">Demo</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+    <div class="bs-header" id="content">
+		<div class="container">
+			<h1>ETRO STORE Documentation</h1>
+			<p style="opacity:.66;">An overview of the ETRO STORE HTML Theme, Documentation of the HTML, CSS, jQuery, how to use, basic skills, examples, and more.</p>
+		</div>
+    </div>
+
+    <div class="container bs-docs-container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="bs-sidebar hidden-print" role="complementary">
+					<ul class="nav bs-sidenav">              
+						<!-- SIDEBAR NAVIGATION -->              
+						<li class="active">
+							<a href="#tips">Tips</a>
+						</li>
+						
+						<li>
+							<a href="#file-structure">File Structure</a>
+						</li>
+						
+						<li>
+							<a href="#html-structure">HTML Structure</a>
+						</li>
+						
+						<li>
+							<a href="#css-structure">CSS Structure</a>
+						</li>
+						
+						<li>
+							<a href="#javascript-structure">Javascript Structure</a>
+						</li>
+						
+						<li>
+							<a href="#main-styles">Customization and Styles</a>
+							
+							<ul class="nav">
+								<li>
+									<a href="#main-general">General</a>
+								</li>
+								
+								<li>
+									<a href="#main-layout">Layout</a>
+								</li>
+								
+								<li>
+									<a href="#main-headers">Headers</a>
+								</li>
+								
+								<li>
+									<a href="#main-menus">Menus</a>
+								</li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="#pages">Pages</a>
+						</li>
+
+						<li>
+							<a href="#source-and-credits">Source and Credits</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="col-md-9" role="main">
+				<!-- TIPS -->
+				<div class="bs-docs-section">
+					<div class="page-header">
+						<h1 id="tips">Tips</h1>
+					</div>
+					
+					<p class="lead">Some very useful Tips how to work better with the Theme, please read!</p>
+					
+					<div class="alert alert-info">
+						<i class="fa fa-warning fa-lg"></i> Do not start from scratch, use an existing page from the demo files and modify it to learn how the Theme works
+					</div>
+					
+					<div class="alert alert-info">
+						<i class="fa fa-warning fa-lg"></i> Explore the live demo for page ideas and sample code
+					</div>
+					
+					<div class="alert alert-success">
+						<i class="fa fa-warning fa-lg"></i> Use Firebug or Chrome Developer Tools to detect Classes and Javascript Conflicts
+					</div>
+				</div>
+
+				<!-- FILE STRUCTURE -->
+				<div class="bs-docs-section">
+					<div class="page-header">
+						<h1 id="file-structure">File Structure of the Theme</h1>
+					</div>
+					
+					<p class="lead">Within the download you'll find the following directories and files.</p>
+
+					<div class="highlight">
+						<pre>
+							<code>
+HOME_STYLE
+│
+├─ <i class="fa fa-folder-open fa-fw"></i> CSS
+│  │
+│  ├── <i class="fa fa-folder-open fa-fw"></i> compare
+│  │
+│  └── <i class="fa fa-folder-open fa-fw"></i> fancy
+│  │
+│  └── <i class="fa fa-folder-open fa-fw"></i> fonts
+│  │
+│  ├── <i class="fa fa-folder-open fa-fw"></i> js_composer
+│  │
+│  ├── <i class="fa fa-folder-open fa-fw"></i> owl-carousel
+│  │
+│  ├── <i class="fa fa-folder-open fa-fw"></i> select2
+│  │
+│  ├── <i class="fa fa-folder-open fa-fw"></i> slick-1.6.0
+│  │
+│  ├── <i class="fa fa-folder-open fa-fw"></i> sw_core
+│  │
+│  ├── <i class="fa fa-folder-open fa-fw"></i> sw_woocommerce
+│  │
+│  ├── <i class="fa fa-folder-open fa-fw"></i> woocommerce
+│  │
+│  ├── <i class="fa fa-folder-open fa-fw"></i> wp_includes
+│  │
+│  ├── <i class="fa fa-folder-open fa-fw"></i> yith-woocommerce-compare
+│  │
+│  ├── <i class="fa fa-folder-open fa-fw"></i> yith-woocommerce-wishlist
+│  │
+│  └─ <i class="fa fa-folder-open fa-fw"></i> other-files.css
+│
+├─ <i class="fa fa-folder-open fa-fw"></i> ajax
+│  │
+│  └─ <i class="fa fa-folder-open fa-fw"></i> categories
+│  │
+│  └─ <i class="fa fa-folder-open fa-fw"></i> fancybox
+│  │
+│  └─ <i class="fa fa-folder-open fa-fw"></i> home5
+│
+├─ <i class="fa fa-folder-open fa-fw"></i> fonts
+│
+├─ <i class="fa fa-folder-open fa-fw"></i> icons
+│
+├─ <i class="fa fa-folder-open fa-fw"></i> images
+│
+├─ <i class="fa fa-folder-open fa-fw"></i> js
+│  │
+│  ├─ <i class="fa fa-folder-open fa-fw"></i> admin
+│  │
+│  ├─ <i class="fa fa-folder-open fa-fw"></i> jquery
+│  │
+│  ├─ <i class="fa fa-folder-open fa-fw"></i> js_composer
+│  │
+│  ├─ <i class="fa fa-folder-open fa-fw"></i> owl-carousel
+│  │
+│  └─ <i class="fa fa-folder-open fa-fw"></i> select2
+│  │
+│  ├─ <i class="fa fa-folder-open fa-fw"></i> slick-1.6.0
+│  │
+│  ├─ <i class="fa fa-folder-open fa-fw"></i> sw_core
+│  │
+│  ├─ <i class="fa fa-folder-open fa-fw"></i> sw_woocommerce
+│  │
+│  ├─ <i class="fa fa-folder-open fa-fw"></i> woocommerce
+│  │
+│  ├─ <i class="fa fa-folder-open fa-fw"></i> wp-admin
+│  │
+│  └─ <i class="fa fa-folder-open fa-fw"></i> yith-woocommerce-compare
+│  │
+│  └─ <i class="fa fa-folder-open fa-fw"></i> yith-woocommerce-wishlist
+│  │
+│  └─ <i class="fa fa-folder-open fa-fw"></i> other-files.js
+│
+└─ <i class="fa fa-file fa-fw"></i> other-files.html
+							</code>
+						</pre>
+					</div>
+				</div>
+
+				<!-- HTML STRUCTURE -->
+				<div class="bs-docs-section">
+					<div class="page-header">
+						<h1 id="html-structure">HTML Structure</h1>
+					</div>
+					
+					<p class="lead">
+						The template is based on <strong>Bootstrap 3</strong> Framework - <a target="_blnak" href="http://getbootstrap.com">http://getbootstrap.com</a>
+					</p>
+					
+					<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-12&quot;&gt;
+    Level 1 column
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;Level 2&lt;/div&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;Level 2&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</pre>		
+					
+					<div class="alert alert-info">
+						<i class="fa fa-warning fa-lg"></i> <b>Please note:</b> You can use all Classes and Scripts from Bootstrap 3, they will all work! Not only the grid!
+					</div>
+					
+					<p>
+						Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. If you need more information about the Main Grid, please visit this site: <a target="_blank" href="http://getbootstrap.com/css/#grid">http://getbootstrap.com/css/#grid</a>
+					</p>
+				</div>
+
+				<!-- CSS STRUCTURE -->
+				<div class="bs-docs-section">
+					<div class="page-header">
+						<h1 id="css-structure">CSS Structure</h1>
+					</div>
+					
+					<p class="lead">The organization of the CSS is one of our priorities. These are the CSS file we're using in the template.</p>	
+
+					<h3>Content of the Folder css</h3>
+					
+					<p>Please note: all of these files below are <b>required</b> and always needed.</p>
+
+					<div class="highlight">			
+						<pre>
+							<code>
+<i class="fa fa-file fa-fw"></i> bootstrap
+   This is the Main CSS File from Bootstrap3
+
+<i class="fa fa-file fa-fw"></i> font-awesome
+   This is the css file that will take care of the ETRO STORE icons buil with Fontawesome.
+
+<i class="fa fa-folder-open fa-fw"></i> js_composer
+   Here you'll find the CSS Files for js_composer css
+   
+<i class="fa fa-file fa-fw"></i> app-default.css
+   This is the Main CSS File for the ETRO STORE Theme with all necessary Styles and Overrides. For Colors of the Theme use "app-orange.css".
+
+<i class="fa fa-file fa-fw"></i> app-responsive.css
+   This is the css file form Responsive 
+							</code>
+						</pre>
+					</div>
+
+					<div class="alert alert-success">
+						<i class="fa fa-thumbs-up fa-lg"></i> Use Firebug or Chrome Developer Tools to detect the CSS Classes
+					</div>
+				</div>
+
+				<!-- JAVASCRIPT STRUCTURE -->
+				<div class="bs-docs-section">
+					<div class="page-header">
+						<h1 id="javascript-structure">Javascript Structure</h1>
+					</div>
+					
+					<p class="lead">
+						jQuery - is a Javascript library that greatly reduces the amount of code that you must write. For more information, please visit <a target="_blank" href="http://www.jquery.com/">jQuery.com</a>.
+					</p>
+					
+					<p>
+						The initialization of the elements, libs and features is made by the file <span class="label label-warning">main.js</span>, in the JS folder.
+					</p>
+
+					<h3>Content of the Folder js</h3>
+					
+					<p>Please note: one of these files below (bootstrap or bootstrap.min.js) are <b>required</b> and always needed.</p>
+
+					<div class="highlight">			
+						<pre>
+							<code>
+<i class="fa fa-file fa-fw"></i> Bootstrap
+   This is the Main jQuery File from Bootstrap3
+
+<i class="fa fa-folder-open fa-fw"></i> Countdown
+   Here you'll find the jQuery Files for the Countdown plugin
+
+<i class="fa fa-folder-open fa-fw"></i> owl-carousel
+   Here you'll find the jQuery Files for the Owl Carousel plugin
+
+<i class="fa fa-folder-open fa-fw"></i> Slick
+   Here you'll find the jQuery Files for the Slick plugin
+
+<i class="fa fa-folder-open fa-fw"></i> Fancybox
+   Here you'll find the jQuery Files for the Fancybox plugin
+
+<i class="fa fa-folder-open fa-fw"></i> Jquery-ui
+   Here you'll find the jQuery Files for the jquery-ui plugin
+
+<i class="fa fa-folder-open fa-fw"></i> ColorBox
+   Here you'll find the jQuery Files for the ColorBox plugin
+							</code>
+						</pre>
+					</div>
+
+					<h3>Content of the Folder themejs</h3>
+					
+					<p>Please note: most of these files below are optional and not needed if you decide to drop one of these Features.</p>
+
+					<div class="highlight">			
+						<pre>
+							<code>
+<i class="fa fa-file fa-fw"></i> main.js
+   VERY IMPORTANT: all jQuery Plugins are initialised within this File!
+
+<i class="fa fa-file fa-fw"></i> pathLoader.js
+   jQuery File for the PathLoader
+   
+<i class="fa fa-file fa-fw"></i> megamenu.js
+   jQuery File for the Megamenu
+							</code>
+						</pre>
+					</div>
+
+					<div class="alert alert-success">
+						<i class="fa fa-thumbs-up fa-lg"></i> Use Firebug or Chrome Developer Tools to detect jQuery Errors
+					</div>
+				</div>				
+				
+				<!-- MAIN GENERAL - GENERAL -->
+				<div class="bs-docs-section">
+					<div class="page-header">
+						<h1 id="main-styles">Customization and Styles</h1>
+					</div>
+					
+					<div class="page-header">
+						<h1 id="main-general">General</h1>
+					</div>
+					
+					<p class="lead">This Theme has various Style options for different Kinds of Layouts.</p>
+					
+					<p>
+						Market comes with 2 predefined color schemes. If you want to change scheme, then you should include one of CSS files from home_style/css/ into your markup:
+					</p>
+
+					<pre class="prettyprint lang-html linenums">
+&lt;!-- styles Default = Blue --&gt;
+&lt;link rel="stylesheet" href="home_style/css/app-default.css"&gt;
+
+&lt;!-- make sure that color scheme file new alternative main styles file --&gt;
+&lt;link rel="stylesheet" href="home_style/css/theme/app-orange.css"&gt;
+					</pre>
+					<hr />
+					
+					<h3>Fonts</h3>
+
+					<p>
+						To use another Font, please choose your new Font at the <a href="http://www.google.com/fonts" target="_blank">Google Font Site</a>, include the given Style Tag inside the Head Section of the Theme.
+					</p>
+
+					<p>In the default Theme we have used this Code for example:</p>
+					
+					<pre class="prettyprint lang-html linenums">
+&lt;link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'&gt;
+					</pre>
+				</div>
+
+				<!-- STYLE -->
+				<div class="bs-docs-section">
+					<div class="page-header">
+						<h1 id="style">Styles</h1>
+					</div>
+					
+					<p class="lead">
+						We have 5 styles. See demo for example: etro\index.html
+					</p>
+				</div>
+				
+				<!-- PAGES -->
+				<div class="bs-docs-section">
+					<div class="page-header">
+						<h1 id="pages">Pages</h1>
+					</div>
+					
+					<p class="lead">
+						We have added a lot of Sample Pages. Please see the different HTML Pages.
+					</p>	
+				</div>
+
+				<!-- SOURCE AND CREDITS -->
+				<div class="bs-docs-section">
+					<div class="page-header">
+						<h1 id="source-and-credits">Source and Credits</h1>
+					</div>
+					
+					<p class="lead">We have used the following Recources and Scripts:</p>	
+				</div>
+				
+				<p><b>General</b></p>
+				
+				<ul>
+					<li>
+						Images - <a target="_blank" href="http://shutterstock.net/">http://shutterstock.net/</a>, 
+						<a target="_blank" href="http://unsplash.com/">Unsplash</a>, 
+						<a target="_blank" href="http://www.gratisography.com/">GRATISOGRAPHY</a>
+					</li>
+					
+					<li>Google Fonts - <a target="_blank" href="http://www.google.com/webfonts">http://www.google.com/webfonts</a></li>
+					
+					<li>Icons Font - <a target="_blank" href="http://fontawesome.io/">http://fontawesome.io/</a></li> 
+				</ul>
+				
+				<p><b>Scripts and CSS</b></p>
+
+				<ul>
+					<li>
+						jQuery - <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a>
+					</li>
+					
+					<li>
+						Bootstrap 3 - <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a>
+					</li>
+					
+					<li>
+						The Final Countdown  - <a target="_blank" href="http://hilios.github.io/jQuery.countdown/">http://hilios.github.io/jQuery.countdown/</a>
+					</li>
+					
+                    <li>
+						Jquery-UI - <a target="_blank" href="http://jqueryui.com">http://jqueryui.com</a>
+					</li>
+					
+                    <li>
+						Jquery-BlockUI - <a target="_blank" href="http://malsup.com/jquery/block/">http://malsup.com/jquery/block/</a>
+					</li>
+					
+                    <li>
+						Colorbox - <a target="_blank" href="http://www.jacklmoore.com/colorbox">http://www.jacklmoore.com/colorbox</a>
+					</li>
+					
+                    <li>
+						PrettyPhoto - <a target="_blank" href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/</a>
+					</li>
+					
+                    <li>
+						FancyBox - <a target="_blank" href="http://fancyapps.com/fancybox">http://fancyapps.com/fancybox</a>
+					</li>
+					
+                    <li>
+						Slick JS - <a target="_blank" href="http://kenwheeler.github.io/slick">http://kenwheeler.github.io/slick</a>
+					</li>
+					
+                    <li>
+						Modernizr - <a target="_blank" href="https://modernizr.com">https://modernizr.com</a>
+					</li>
+					
+					<li>
+						OWL Carousel - <a target="_blank" href="http://www.owlgraphic.com/owlcarousel/index.html">http://www.owlgraphic.com/owlcarousel/index.html</a>
+					</li>
+					
+					<li>
+						Realistic password strength estimation- <a target="_blank" href="https://github.com/dropbox/zxcvbn">https://github.com/dropbox/zxcvbn</a>
+					</li>
+					
+					<li>
+						WOW!- <a target="_blank" href="https://github.com/matthieua/WOW">https://github.com/matthieua/WOW</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+		<!-- FOOTER -->
+		<footer class="bs-footer" role="contentinfo">
+			<div class="container">
+			</div>
+		</footer>
+		
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="assets/js/jquery.js"></script>
+		<script src="assets/js/bootstrap.js"></script>
+		<script src="assets/js/application.js"></script>
+		<script src="assets/js/prettify.js"></script>
+	</body>
+</html>
